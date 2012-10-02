@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   def create						#go back to 7.3.1 and read how works
     @user = User.new(params[:user])
     if @user.save
+      sign_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user 
     else

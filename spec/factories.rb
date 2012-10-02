@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryGirl.define do 					#what is the point of factorygirl?
   factory :user do
     name     "Michael Hartl"
     email    "michael@example.com"
